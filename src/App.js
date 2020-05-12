@@ -5,9 +5,8 @@ import { generatePalettes } from './colorHelpers.js'
 
 class App extends Component {
   render() {
-    console.log(generatePalettes(seedColors[4]));
     return (
-      <Palette {...seedColors[4]}/>
+      <Palette palette={generatePalettes(seedColors[4])}/>
     )
   }
 }
