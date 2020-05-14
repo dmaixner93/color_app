@@ -12,16 +12,14 @@ class Navbar extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
     handleChange(e) {
-        console.log(e.target.value)
-        this.setState({ format: e.target.value });
-        this.props.handleChange(e.target.value);
+        console.log(e.target.value);
     }
     render() {
         const { level, changeLevel, handleChange } = this.props;
         return (
             <header className="Navbar">
                 <div className="logo">
-                    <a>reactcolorpicker</a>
+                    <span>reactcolorpicker</span>
                 </div>
                 <div className="slider-container">
                     <span>Level: {level}</span>
